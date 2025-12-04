@@ -6,23 +6,21 @@
     <meta name="description" content="Reserva de canchas ideal para gestionar horarios, disponibilidad y pagos.">
     <meta name="keywords" content="Playtomic API, Bookeo API, Skedda API, reservas deportivas, deportes, canchas, programación">
     <meta name="author" content="Raul_Andres_Peralta_Garvizu">
-    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/Iniciarsesion.css">
     <title>Inicio de Sesión</title>
 </head>
 <body>
-    <main class="container">
-        <h2>Inicio de Sesión</h2>
-        <form>
-            <section class="form-group">
-                <label for="user">Nombre de usuario:</label>
+    <main class="login_box">
+        <h2>INICIO DE SESIÓN</h2>
+        <form method="post">
+            <section class="usuario_box">
                 <input type="text" name="user" required placeholder="NOMBRE DE USUARIO">
             </section>
-            <section class="form-group">
-                <label for="pass">Contraseña:</label>
+            <section class="usuario_box">
                 <input type="password" name="pass" required placeholder="CONTRASEÑA">
             </section>
-            <button type="submit" ><a href="usuario.html">INICIAR SESIÓN</a></button>
-            <input type="reset" value="Limpiar">
+            <button type="submit" class="botones"><a href="../HTML/usuario.html">INICIAR SESIÓN</a></button>
+            <button type="reset" class="botones">LIMPIAR</button>
             <section class="link">
                 <p>¿No tienes cuenta? <a href="registrar.html">Regístrate aquí.</a></p>
             </section>

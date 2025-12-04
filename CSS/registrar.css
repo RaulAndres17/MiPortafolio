@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url('../imagenes/balonfutsal.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    color: white;
+    box-sizing: border-box;
+}
+
+.login_box h2 {
+    margin: 0 0 30px;
+    text-align: center;    
+}
+
+.login_box .usuario_box {
+    position: relative;
+}
+
+.login_box .usuario_box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+}
+
+.login_box .usuario_box input::placeholder {
+    color: #fff;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.empresa-button {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.empresa-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.empresa-button:active {
+    background-color: #004494;
+    transform: scale(1);
+}
+
+.link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}

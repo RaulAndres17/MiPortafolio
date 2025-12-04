@@ -6,6 +6,7 @@
     <meta name="description" content="Reserva de canchas ideal para gestionar horarios, disponibilidad y pagos.">
     <meta name="keywords" content="Playtomic API, Bookeo API, Skedda API, reservas deportivas, deportes, canchas, programación">
     <meta name="author" content="Raul_Andres_Peralta_Garvizu">
+    <link rel="stylesheet" href="../CSS/registrar.css">
     <title>Registro</title>
 </head>
 <body>
@@ -13,38 +14,31 @@
         <h2>REGÍSTRATE</h2>
         <form method="post">
             <section class="usuario_box">
-                <label for="ci"></label>
                 <input type="text" name="ci" required placeholder="CARNET DE IDENTIDAD">
             </section>
             <section class="usuario_box">
-                <label for="nombre"></label>
                 <input type="text" name="nombre" required placeholder="NOMBRE">
             </section>
             <section class="usuario_box">
-                <label for="apellido"></label>
                 <input type="text" name="apellido" required placeholder="APELLIDO">
             </section>
             <section class="usuario_box">
-                <label for="telefono"></label>
                 <input type="number" name="telefono" required placeholder="TELÉFONO">
             </section>
-            <secton class="usuario_box">
-                <label for="NombreUsuario"></label>
-                <input type="text" name="NombreUsuario" required placeholder="NOMBRE DE USUARIO">
-            </secton>
             <section class="usuario_box">
-                <label for="contrasena"></label>
+                <input type="text" name="NombreUsuario" required placeholder="NOMBRE DE USUARIO">
+            </section>
+            <section class="usuario_box">
                 <input type="password" name="contrasena" required placeholder="CONTRASEÑA">
             </section>
             
-           <button type="submit"><a href="usuario.html">REGISTRAR</a></button>
-           <button type="reset">LIMPIAR</button>
+            <button type="submit" class="empresa-button"><a href="../HTML/usuario.html">REGISTRAR</a></button>
+            <button type="reset" class="empresa-button">LIMPIAR</button>
 
-           <section class="link">
-                <p>¿Ya tienes cuenta? <a href="iniciarsesion.html">Inicia Sesion aquí.</a></p>
+            <section class="link">
+                <p>¿Ya tienes cuenta? <a href="iniciarsesion.html">Inicia Sesión aquí.</a></p>
             </section>
         </form>
     </main>
 </body>
 </html>
-            
