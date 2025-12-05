@@ -8,6 +8,47 @@ body {
     padding: 0;
 }
 
+@media (max-width: 768px) {
+
+    /* Menú superior */
+    #OpcionesUsuarios {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    #OpcionesUsuarios button {
+        width: 80%;
+        margin: 8px 0;
+        font-size: 18px;
+    }
+
+    /* Título */
+    header#Encabezado h1 {
+        font-size: 2em;
+    }
+
+    header#Encabezado p {
+        font-size: 1.1em;
+    }
+
+    /* SECCIONES en 1 sola columna */
+    main#OpcionesUsusario {
+        grid-template-columns: 1fr;  /* 1 por fila */
+        padding: 20px;
+    }
+
+    main#OpcionesUsusario section {
+        min-height: 120px;
+        padding: 30px 15px;
+    }
+
+    main#OpcionesUsusario section h2 a {
+        font-size: 1.2rem;
+    }
+
+}
+
 #CerrarSesion {
     background-color: #000;
     overflow: hidden;

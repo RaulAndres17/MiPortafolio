@@ -99,3 +99,69 @@ header#Encabezado p {
     transform: scale(1.08); /* un poco más grande al hover */
     box-shadow: 0 0 35px #0f0;
 }
+
+@media (max-width: 768px) {
+
+    #OpcionesUsuarios {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    #OpcionesUsuarios button {
+        width: 85%;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    header#Encabezado {
+        padding: 30px 10px;
+    }
+
+    header#Encabezado h1 {
+        font-size: 1.8em;
+    }
+
+    header#Encabezado p {
+        font-size: 1em;
+    }
+
+    .mostrarCanchas {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .canchaCesped,
+    .canchaCemento {
+        width: 100%;
+        max-width: 350px;
+        padding: 15px;
+    }
+
+    .canchaCesped p,
+    .canchaCemento p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .mostrarCanchas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .canchaCesped,
+    .canchaCemento {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    header#Encabezado h1 {
+        font-size: 2.3em;
+    }
+
+    header#Encabezado p {
+        font-size: 1.2em;
+    }
+}

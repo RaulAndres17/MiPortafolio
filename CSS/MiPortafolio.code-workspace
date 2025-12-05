@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "MiPortafolio",
+			"path": ".."
+		},
+		{
+			"name": "imagenes",
+			"path": "D:/proyecto/Proyectos final/proyectocanchas/imagenes"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MiPortafolio"
+	}
+}
