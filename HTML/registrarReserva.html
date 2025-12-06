@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserva de canchas ideal para gestionar horarios, disponibilidad y pagos.">
+    <meta name="keywords" content="Playtomic API, Bookeo API, Skedda API, reservas deportivas, deportes, canchas, programación">
+    <meta name="author" content="Raul_Andres_Peralta_Garvizu">
+    <link rel="stylesheet" href="../CSS/registrarReserva.css">
+    <title>Reservar Cancha</title>
+</head>
+<body>
+
+    <nav id="OpcionesUsuarios">
+        <button id="perfil"><a href="usuario.html">Volver</a></button>
+        <button id="regis"><a href="index.html">Cerrar Sesion</a></button>
+    </nav>
+            
+    <header id="Encabezado">
+        <h1 id="bienvenido">Reservas Complejo Deportivo Poeta</h1>
+        <p id="frase1">Tu página web de reserva de canchas del complejo deportivo poeta</p>
+    </header>
+
+    <main class="mostrarCanchas">
+        <section class="canchaCesped">
+            <img src="../imagenes/cancha1.jpeg">
+            <p>CANCHA Nº1 <br> TIPO: CESPED</p>
+        </section>
+
+        <section class="canchaCesped">
+            <img src="../imagenes/cancha2.jpeg">
+            <p>CANCHA Nº2 <br> TIPO: CESPED</p>
+        </section>
+
+        <section class="canchaCemento">
+            <img src="../imagenes/cancha3.jpeg">
+            <p>CANCHA Nº3 <br> TIPO: CEMENTO</p>
+        </section>
+
+        <section class="canchaCemento">
+            <img src="../imagenes/cancha4.jpeg">
+            <p>CANCHA Nº4 <br> TIPO: CEMENTO</p>
+        </section>
+
+        <section class="canchaCemento">
+            <img src="../imagenes/cancha5.jpeg">
+            <p>CANCHA Nº5 <br> TIPO: CEMENTO</p>
+        </section>
+
+        <section class="canchaCesped">
+            <img src="../imagenes/cancha6.jpeg">
+            <p>CANCHA Nº6 <br> TIPO: CESPED</p>
+        </section>
+    </main>
+
+    <section class="login_box">
+        <h2>Registra tu Cancha</h2>
+
+        <form action="registrarReserva.php" method="post">
+
+            <section class="opcionesRegis">
+                <label for="NroCancha">Número de cancha</label>
+                <input type="number" name="NroCancha" required>
+            </section>
+
+            <section class="opcionesRegis">
+                <label for="tipoCancha">Tipo de la cancha</label>
+                <select name="tipoCancha" required>
+                    <option value=""></option>
+                    <option value="Cesped">Cesped</option>
+                    <option value="Cemento">Cemento</option>
+                </select>
+            </section>
+
+            <section class="opcionesRegis">
+                <label for="horaInicio">Hora de inicio</label>
+                <input type="time" name="horaInicio" required>
+            </section>
+
+            <section class="opcionesRegis">
+                <label for="horaFin">Hora de fin</label>
+                <input type="time" name="horaFin" required>
+            </section>
+
+            <section class="opcionesRegis">
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha" required>
+            </section>
+
+            <input type="submit" value="Registrar">
+            <input type="reset" value="Limpiar">
+
+            <div class="link">
+                <a href="usuario.html">Volver atrás</a>
+            </div>
+
+        </form>
+    </section>
+</body>
+</html>
