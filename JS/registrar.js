@@ -19,7 +19,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
 
     localStorage.setItem("usuarioRegistrado", JSON.stringify(datosUsuario));
 
-    alert("✅ Te registraste correctamente");
+    alert("Te registraste correctamente");
 
     window.location.href = "iniciarsesion.html";
 });

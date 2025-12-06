@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../imagenes/fondo.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+#OpcionesUsuarios {
+    background-color: #000;
+    overflow: hidden;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#OpcionesUsuarios button {
+    background-color: #000;
+    color: #0f0;
+    border: 2px solid #0f0;
+    padding: 14px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#OpcionesUsuarios button a {
+    color: #0f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#OpcionesUsuarios button:hover {
+    background-color: #0f0;
+    color: #000;
+    box-shadow: 0 0 15px #0f0;
+}
+
+header#Encabezado {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.mostrarCanchas {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.canchaCesped, .canchaCemento {
+    background-color: rgba(26,26,26,0.9);
+    border: 2px solid #0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,255,0,.5);
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    transition: 0.3s;
+}
+
+.canchaCesped:hover, .canchaCemento:hover {
+    transform: scale(1.05);
+}
+
+.canchaCesped {
+    border-color: #0f0;
+    box-shadow: 0 0 20px rgba(0,255,0,.5);
+}
+
+.canchaCemento {
+    border-color: #ccc;
+    box-shadow: 0 0 20px rgba(200,200,200,.5);
+}
+
+.canchaCesped p, .canchaCemento p {
+    margin: 8px 0;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .mostrarCanchas {
+        grid-template-columns: 1fr;
+    }
+}
