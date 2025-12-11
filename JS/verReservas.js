@@ -10,7 +10,6 @@ if(reservas.length === 0){
         div.className = reserva.tipoCancha === "Cesped" ? "canchaCesped" : "canchaCemento";
         div.innerHTML = `
             <p>CANCHA Nº${reserva.nroCancha}</p>
-            <p>TIPO: ${reserva.tipoCancha}</p>
             <p>FECHA: ${reserva.fecha}</p>
             <p>HORA: ${reserva.horaInicio} - ${reserva.horaFin}</p>
         `;
