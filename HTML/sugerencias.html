@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,37 +11,30 @@
 </head>
 <body>
 
-    <main class="formSugerencia">
-        <h2>Registra tu Cancha</h2>
+<main class="formularioSugerencias">
+    <h2>Envía tu sugerencia</h2>
+    <form id="formSugerencias">
+        <section class="opcionSugerencia">
+            <input type="text" name="nombre" required placeholder="NOMBRE">
+        </section>
 
-        <form>
-            <section class="opcionesSugerencias">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" required placeholder="NOMBRE">
-            </section>
+        <section class="opcionSugerencia">
+            <input type="email" name="email" required placeholder="CORREO">
+        </section>
 
-            <section class="opcionesSugerencias">
-                <label for="email">Correo</label>
-                <input type="text" name="email" required placeholder="CORREO">
-            </section>
+        <section class="opcionSugerencia">
+            <input type="text" name="sugerencia" required placeholder="Tu sugerencia aquí (150 caracteres)">
+        </section>
 
-            <section class="opcionesSugerencias">
-                <label for="sugerencia">Danos tu sugerencias</label>
-                <input type="text" name="sugerencia" required placeholder="Tu sugerencia aqui (150 caracteres max.)">
-            </section>
+        <button type="submit" class="botones">ENVIAR</button>
+        <button type="reset" class="botones">LIMPIAR</button>
 
-            <button type="submit" class="button">
-                <a href="../HTML/usuario.html">Enviar</a>
-            </button>
+        <section class="link">
+            <a href="usuario.html">Volver atrás</a>
+        </section>
+    </form>
+</main>
 
-            <button type="reset" class="button">LIMPIAR</button>
-
-            <section>
-                <a href="usuario.html">Volver atras</a>
-            </section>
-
-        </form>
-    </main>
-
+<script src="../JS/sugerencia.js"></script>
 </body>
 </html>

@@ -4,7 +4,6 @@ document.querySelector("form").addEventListener("submit", function(e){
     // Obtenemos los datos del formulario
     const reserva = {
         nroCancha: document.querySelector('input[name="NroCancha"]').value,
-        tipoCancha: document.querySelector('select[name="tipoCancha"]').value,
         horaInicio: document.querySelector('input[name="horaInicio"]').value,
         horaFin: document.querySelector('input[name="horaFin"]').value,
         fecha: document.querySelector('input[name="fecha"]').value
@@ -19,7 +18,7 @@ document.querySelector("form").addEventListener("submit", function(e){
     // Guardamos todo de nuevo
     localStorage.setItem("reservas", JSON.stringify(reservas));
 
-    alert("✅ Reserva registrada correctamente");
+    alert(" Reserva registrada correctamente");
     
     // Limpiamos el formulario
     e.target.reset();

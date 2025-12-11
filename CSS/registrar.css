@@ -51,10 +51,10 @@ body {
     font-style: italic;
 }
 
-.empresa-button {
+.botones {
     width: 100%;
     padding: 12px 24px;
-    background-color: #007bff;
+    background-color: #0f0;
     color: white;
     border: none;
     border-radius: 5px;
@@ -65,13 +65,13 @@ body {
     margin-top: 10px;
 }
 
-.empresa-button:hover {
-    background-color: #0056b3;
+.botones:hover {
+    background-color: #0f03;
     transform: scale(1.05);
 }
 
-.empresa-button:active {
-    background-color: #004494;
+.botones:active {
+    background-color: #0f0;
     transform: scale(1);
 }
 

@@ -4,7 +4,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
     const user = document.querySelector('input[name="user"]').value.trim();
     const pass = document.querySelector('input[name="pass"]').value.trim();
     if (user === "" || pass === "") {
-        alert("⚠️ Debes llenar todos los campos");
+        alert("Debes llenar todos los campos");
         return;
     }
 
@@ -16,7 +16,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
     }
     
     if (user === datosGuardados.usuario && pass === datosGuardados.contrasena) {
-        alert("Iniciaste sesión correctamente");
+        alert("Iniciaste sesión correctamente. Bienvenido " + user);
         window.location.href = "../HTML/usuario.html";
     } else {
         alert("Usuario o contraseña incorrectos");

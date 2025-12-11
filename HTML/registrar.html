@@ -7,14 +7,14 @@
     <meta name="keywords" content="Playtomic API, Bookeo API, Skedda API, reservas deportivas, deportes, canchas, programación">
     <meta name="author" content="Raul_Andres_Peralta_Garvizu">
     <link rel="stylesheet" href="../CSS/registrar.css">
-    <title>Registro</title>
+    <title>Registro de Usuario</title>
 </head>
 <body>
     <main class="login_box">
         <h2>REGÍSTRATE</h2>
-        <form method="post">
+        <form method="post" id="formRegistro">
             <section class="usuario_box">
-                <input type="text" name="ci" required placeholder="CARNET DE IDENTIDAD">
+                <input type="number" name="ci" required placeholder="CARNET DE IDENTIDAD">
             </section>
             <section class="usuario_box">
                 <input type="text" name="nombre" required placeholder="NOMBRE">
@@ -31,16 +31,14 @@
             <section class="usuario_box">
                 <input type="password" name="contrasena" required placeholder="CONTRASEÑA">
             </section>
-            
-            <button type="submit" class="empresa-button"><a href="../HTML/usuario.html">REGISTRAR</a></button>
-            <button type="reset" class="empresa-button">LIMPIAR</button>
-
+            <button type="submit" class="botones">REGISTRAR</button>
+            <button type="reset" class="botones">LIMPIAR</button>
             <section class="link">
                 <p>¿Ya tienes cuenta? <a href="iniciarsesion.html">Inicia Sesión aquí.</a></p>
             </section>
         </form>
-
-        <script src="../JS/registrar.js"></script>
     </main>
+
+    <script src="../JS/registrar.js"></script>
 </body>
 </html>

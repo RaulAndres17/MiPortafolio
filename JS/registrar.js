@@ -1,25 +1,23 @@
-document.querySelector("form").addEventListener("submit", function (e) {
-    e.preventDefault();
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
 
-    const ci = document.querySelector('input[name="ci"]').value;
-    const nombre = document.querySelector('input[name="nombre"]').value;
-    const apellido = document.querySelector('input[name="apellido"]').value;
-    const telefono = document.querySelector('input[name="telefono"]').value;
-    const usuario = document.querySelector('input[name="NombreUsuario"]').value;
-    const contrasena = document.querySelector('input[name="contrasena"]').value;
+        const nombre = document.querySelector('input[name="nombre"]').value.trim();
+        const apellido = document.querySelector('input[name="apellido"]').value.trim();
+        const ci = document.querySelector('input[name="ci"]').value.trim();
+        const telefono = document.querySelector('input[name="telefono"]').value.trim();
+        const usuario = document.querySelector('input[name="NombreUsuario"]').value.trim();
+        const contrasena = document.querySelector('input[name="contrasena"]').value.trim();
 
-    const datosUsuario = {
-        ci,
-        nombre,
-        apellido,
-        telefono,
-        usuario,
-        contrasena
-    };
+        if(!nombre || !apellido || !ci || !telefono || !usuario || !contrasena) {
+            alert("Completa todos los campos");
+            return;
+        }
 
-    localStorage.setItem("usuarioRegistrado", JSON.stringify(datosUsuario));
+        const datosUsuario = { ci, nombre, apellido, telefono, usuario, contrasena };
+        localStorage.setItem("usuarioRegistrado", JSON.stringify(datosUsuario));
 
-    alert("Te registraste correctamente");
-
-    window.location.href = "iniciarsesion.html";
+        alert("Felicidades " + nombre + " te registraste correctamente");
+        window.location.href = "iniciarsesion.html";
+    });
 });

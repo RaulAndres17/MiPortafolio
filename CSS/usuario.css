@@ -8,48 +8,87 @@ body {
     padding: 0;
 }
 
-#CerrarSesion {
+@media (max-width: 768px) {
+
+    #OpcionesUsuarios {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    #OpcionesUsuarios .boton {
+        width: 80%;
+        margin: 8px 0;
+        font-size: 18px;
+    }
+
+    header#Encabezado h1 {
+        font-size: 2em;
+    }
+
+    header#Encabezado p {
+        font-size: 1.1em;
+    }
+
+    main#OpcionesUsusario {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    main#OpcionesUsusario section {
+        min-height: 120px;
+        padding: 30px 15px;
+    }
+
+    main#OpcionesUsusario section h2 a {
+        font-size: 1.2rem;
+    }
+
+    .Opciones {
+        width: 100%;
+    }
+}
+
+#OpcionesUsuarios {
     background-color: #000;
     overflow: hidden;
     padding: 10px 0;
     display: flex;
     justify-content: center;
+    gap: 18px;
 }
 
-#CerrarSesion button {
+#OpcionesUsuarios .boton {
     background-color: #000;
     color: #0f0;
     border: 2px solid #0f0;
     padding: 14px 20px;
     font-size: 16px;
     cursor: pointer;
-    margin: 0 10px;
+    text-decoration: none;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
-#CerrarSesion button a {
-    color: #0f0;
-    text-decoration: none;
-}
-
-#CerrarSesion button a:hover {
-    color: #000;
-    text-decoration: none;
-}
-
-#CerrarSesion button:hover {
+#OpcionesUsuarios .boton:hover {
     background-color: #0f0;
     color: #000;
     box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
 }
 
+#nombreUsuario {
+    color: #0f0;
+    font-size: 18px;
+    margin-right: 20px;
+    padding: 14px 20px;
+    border: 2px solid #0f0;
+    border-radius: 5px;
+}
+
 header#Encabezado {
-    background-color: rgba(0, 0, 0, 0.0);
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     padding: 60px 20px;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header#Encabezado h1 {
@@ -70,37 +109,46 @@ main#OpcionesUsusario {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-    border-radius: 10px;
 }
 
-main#OpcionesUsusario section {
+.Opciones {
+    text-decoration: none;
+    width: 45%;
+    display: block;
+}
+
+.Opciones section {
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin: 10px;
     padding: 20px;
     text-align: center;
-    width: 45%;
     transition: transform 0.2s, box-shadow 0.3s;
+    cursor: pointer;
 }
 
-main#OpcionesUsusario section:hover {
+.Opciones:hover section {
     transform: scale(1.05);
     box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
 }
 
-main#OpcionesUsusario section h2 a {
+.Opciones h2 {
     color: #0f0;
     text-decoration: none;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    transition: color 0.3s, text-shadow 0.3s;
+    margin-bottom: 10px;
+    transition: 0.3s;
 }
 
-main#OpcionesUsusario section h2 a:hover {
-    color: #000;
+.Opciones:hover h2 {
+    color: #fff;
     text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
     text-decoration: underline;
-}   
+}
+
+.Opciones img {
+    width: 80%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
