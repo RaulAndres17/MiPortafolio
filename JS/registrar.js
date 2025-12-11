@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const datosUsuario = { ci, nombre, apellido, telefono, usuario, contrasena };
         localStorage.setItem("usuarioRegistrado", JSON.stringify(datosUsuario));
 
-        alert(nombre + " ¡Te registraste correctamente!");
+        alert("Felicidades " + nombre + " te registraste correctamente");
         window.location.href = "iniciarsesion.html";
     });
 });
