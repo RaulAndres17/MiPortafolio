@@ -16,7 +16,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
     }
     
     if (user === datosGuardados.usuario && pass === datosGuardados.contrasena) {
-        alert("Iniciaste sesión correctamente");
+        alert("Iniciaste sesión correctamente. Bienvenido " + user);
         window.location.href = "../HTML/usuario.html";
     } else {
         alert("Usuario o contraseña incorrectos");
