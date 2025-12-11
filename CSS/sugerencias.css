@@ -1,39 +1,39 @@
 body {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
-    background-image: url('../imagenes/balonfutsal.jpg');
+    background: url('../imagenes/balonfutsal.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.formSugerencia {
+.formularioSugerencias {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 400px;
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.8);
-    border: 1px solid #ccc;
-    color: white;
-    transform: translate(-50%, -50%);
-    box-sizing: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    color: white;
+    box-sizing: border-box;
 }
 
-.formSugerencia h2 {
+.formularioSugerencias h2 {
     margin: 0 0 30px;
-    padding: 0;
-    color: #fff;
-    text-align: center;
+    text-align: center;    
 }
 
-.formSugerencia .opcionesSugerencias {
+.formularioSugerencias .opcionSugerencia {
     position: relative;
 }
 
-.formSugerencia .opcionesSugerencias input {
+.formularioSugerencias .opcionSugerencia input {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
@@ -45,19 +45,16 @@ body {
     background: transparent;
 }
 
-.formSugerencia .opcionesSugerencias input::placeholder {
+.formularioSugerencias .opcionSugerencia input::placeholder {
     color: #fff;
-    font-size: italic;
     font-size: 1.2em;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 5px;
-    border-radius: 5px;
+    font-style: italic;
 }
 
-.button {
+.botones {
     width: 100%;
     padding: 12px 24px;
-    background-color: #007bff;
+    background-color: #0f0;
     color: white;
     border: none;
     border-radius: 5px;
@@ -68,12 +65,26 @@ body {
     margin-top: 10px;
 }
 
-.button:hover {
-    background-color: #0056b3;
+.botones:hover {
+    background-color: #0f03;
     transform: scale(1.05);
 }
 
-.button:active {
-    background-color: #004494;
+.botones:active {
+    background-color: #0f0;
     transform: scale(1);
+}
+
+.link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
 }
