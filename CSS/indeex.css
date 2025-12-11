@@ -10,20 +10,18 @@ body {
 
 @media (max-width: 768px) {
 
-    /* Menú superior */
     #OpcionesUsuarios {
         flex-direction: column;
         align-items: center;
         padding: 15px 0;
     }
 
-    #OpcionesUsuarios button {
+    #OpcionesUsuarios .boton {
         width: 80%;
         margin: 8px 0;
         font-size: 18px;
     }
 
-    /* Título */
     header#Encabezado h1 {
         font-size: 2em;
     }
@@ -32,9 +30,8 @@ body {
         font-size: 1.1em;
     }
 
-    /* SECCIONES en 1 sola columna */
     main#OpcionesUsusario {
-        grid-template-columns: 1fr;  /* 1 por fila */
+        grid-template-columns: 1fr;
         padding: 20px;
     }
 
@@ -46,15 +43,6 @@ body {
     main#OpcionesUsusario section h2 a {
         font-size: 1.2rem;
     }
-
-}
-
-#CerrarSesion {
-    background-color: #000;
-    overflow: hidden;
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
 }
 
 #OpcionesUsuarios {
@@ -63,30 +51,21 @@ body {
     padding: 10px 0;
     display: flex;
     justify-content: center;
+    gap: 18px;
 }
 
-#OpcionesUsuarios button {
+#OpcionesUsuarios .boton {
     background-color: #000;
     color: #0f0;
     border: 2px solid #0f0;
     padding: 14px 20px;
     font-size: 16px;
     cursor: pointer;
-    margin: 0 10px;
+    text-decoration: none;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
-#OpcionesUsuarios button a {
-    color: #0f0;
-    text-decoration: none;
-}
-
-#OpcionesUsuarios button a:hover {
-    color: #000;
-    text-decoration: none;
-}
-
-#OpcionesUsuarios button:hover {
+#OpcionesUsuarios .boton:hover {
     background-color: #0f0;
     color: #000;
     box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
@@ -94,12 +73,10 @@ body {
 
 
 header#Encabezado {
-    background-color: rgba(0, 0, 0, 0.0);
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     padding: 60px 20px;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header#Encabezado h1 {
@@ -115,19 +92,18 @@ header#Encabezado p {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
+
 main#OpcionesUsusario {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-    border-radius: 10px;
 }
 
 main#OpcionesUsusario section {
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin: 10px;
     padding: 20px;
     text-align: center;
@@ -143,13 +119,10 @@ main#OpcionesUsusario section:hover {
 main#OpcionesUsusario section h2 a {
     color: #0f0;
     text-decoration: none;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    transition: color 0.3s, text-shadow 0.3s;
+    transition: 0.3s;
 }
 
-main#OpcionesUsusario section h2 a:hover {
+main#OpcionesUsusario section:hover h2 a {
     color: #fff;
     text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
     text-decoration: underline;
