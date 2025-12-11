@@ -150,7 +150,7 @@ main#OpcionesUsusario section h2 a {
 }
 
 main#OpcionesUsusario section h2 a:hover {
-    color: #000;
+    color: #fff;
     text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
     text-decoration: underline;
 }
